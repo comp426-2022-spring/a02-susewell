@@ -76,19 +76,24 @@ export function coinFlips(flips) {
 export function countFlips(array) {
 
   //** how do you get heads and tails in that format */
-  let head = 0;
-  let tail= 0;
-  let i = 0;
+   let i = 0;
+  const counter = {
+    heads: 0,
+    tails: 0,
+  };
   while (i < array.length) {
     if (array[i] = 'heads') {
-      head++;
+      counter['heads'] += 1;
     }else {
-      tail++;
+      counter['tails'] +=1
     }
     i++;
   }
-  return "heads: " + head + ", tails: " + tails;
+  return counter;
+  
 
+
+  
 }
 
 /** Flip a coin!
