@@ -55,6 +55,7 @@ export function coinFlips(flips) {
      } else {
        result[i] ="tails"
      }
+     i++;
   }
   return result;
 }
@@ -83,6 +84,7 @@ export function countFlips(array) {
     }else {
       tail++;
     }
+    i++;
   }
   return "heads: " + head + ", tails: " + tails;
 
