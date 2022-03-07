@@ -5,7 +5,7 @@ import minimist from 'minimist';
 const number = minimist(process.argv.slice(2))
 
 
-if (number = null){
+if (number == null){
     number = 1;
 }
 
