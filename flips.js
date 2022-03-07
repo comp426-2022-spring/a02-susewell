@@ -1,6 +1,10 @@
 
-import { coinFlips} from "./modules/coin.mjs" 
+import { coinFlips, countFlips,} from "./modules/coin.mjs" 
+import minimist from 'minimist';
 
-// Call the coinFlip function and put the return into STDOUT
+const number = minimist(process.argv.slice(2))
 
-console.log(coinFlips());
+
+
+
+console.log(countFlips(coinFlips(number)));
