@@ -11,9 +11,8 @@ const number = args.number
 
 
 
-if (!(isNaN(number))){
-    number = 1;
+if (isNaN(number)){
+    console.log(countFlips(coinFlips(1)));
+} else {
+    console.log(countFlips(coinFlips(number)));
 }
-
-
-console.log(countFlips(coinFlips(number)));
