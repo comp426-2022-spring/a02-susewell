@@ -93,10 +93,6 @@ export function countFlips(array) {
     i++;
   }
   return counter;
-  
-
-
-  
 }
 
 /** Flip a coin!
@@ -114,6 +110,7 @@ export function flipACoin(call) {
   let flip =  Math.random();
   let result = ""
   let lost = ""
+ 
   if (flip < 0.5){
    result = "heads"
   } else {
@@ -124,7 +121,12 @@ export function flipACoin(call) {
   } else {
     lost = 'win';
   }
-  return "call: " + call + ", flip: " + result + ", result: " + lost;
+  const counter = {
+    caller: call,
+    flipper: result,
+    final: lost
+  };
+  return counter;
 }
 
 
