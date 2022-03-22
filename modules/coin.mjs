@@ -50,6 +50,7 @@ export function coinFlips(flips) {
   for(let i = 0; i < flips; i++) {
     result [i] = coinFlip();
   }
+  
   return result;
 }
 
