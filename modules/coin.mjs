@@ -47,7 +47,7 @@ export function coinFlip() {
 export function coinFlips(flips) {
 
   let flip =  Math.random();
-  let result = [];
+  var result = [];
   let i = 0;
   while (i < flips) {
     if (flip < 0.5){
