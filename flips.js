@@ -16,7 +16,7 @@ if (args['number']){
     console.log(flip);
     console.log(countFlips(flip))
 } else {
-    flip = coinFlips(1);
+    let flip = coinFlips(1);
     console.log(flip);
     console.log(countFlips(flip))
 }
