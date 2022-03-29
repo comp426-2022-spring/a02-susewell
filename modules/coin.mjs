@@ -16,13 +16,11 @@
 
 export function coinFlip() {
   let flip =  Math.random();
-  let result = ""
   if (flip < 0.5){
-   result = "heads"
+   return 'heads'
   } else {
-    result ="tails"
+    return 'tails'
   }
-  return result
 }
 
 /** Multiple coin flips
