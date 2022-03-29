@@ -4,12 +4,15 @@ import min from 'minimist';
 
 
 
-let args = min(process.argv.slice(2))
+const args = min(process.argv.slice(2))
+
+
+
 
 
 
 if (args['number']){
-    flip = coinFlips(args['number']);
+    let flip = coinFlips(args['number']);
     console.log(flip);
     console.log(countFlips(flip))
 } else {
