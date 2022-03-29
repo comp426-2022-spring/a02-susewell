@@ -51,7 +51,7 @@ export function coinFlips(flips) {
     result [i] = coinFlip();
   }
 
-  
+
   return result;
 }
 
