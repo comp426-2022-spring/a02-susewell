@@ -68,24 +68,23 @@ export function countFlips(array) {
 
   //** how do you get heads and tails in that format */
    let i = 0;
-  const counter = {
-    heads: 0,
-    tails: 0,
-  };
+   let heads = 0
+   let tails = 0
+  
   while (i < array.length) {
     if (array[i] === 'heads') {
-      counter.heads += 1;
+      heads += 1;
     }else {
-      counter.tails +=1
+      tails +=1
     }
     i++;
   }
-  if (counter.tails === 0) {
+  if (tails === 0) {
     return {'heads' : heads}
-  } else if (counter.heads === 0) {
+  } else if (heads === 0) {
     return {'tails' : tails}
   } else {
-  return counter;
+  return {'heads' : heads, 'tails' : tails}
   }
 }
 
