@@ -73,7 +73,7 @@ export function countFlips(array) {
     tails: 0,
   };
   while (i < array.length) {
-    if (array[i] = 'heads') {
+    if (array[i] === 'heads') {
       counter.heads += 1;
     }else {
       counter.tails +=1

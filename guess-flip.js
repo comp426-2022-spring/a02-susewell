@@ -1,5 +1,5 @@
 import { flipACoin} from "./modules/coin.mjs" 
-import min from minimist;
+import min from "minimist";
 
 let args = min(process.argv.slice(2))
 
