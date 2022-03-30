@@ -80,9 +80,9 @@ export function countFlips(array) {
     }
     i++;
   }
-  if (tails === 0) {
+  if (counter.tails === 0) {
     return {'heads' : heads}
-  } else if (heads === 0) {
+  } else if (counter.heads === 0) {
     return {'tails' : tails}
   } else {
   return counter;
